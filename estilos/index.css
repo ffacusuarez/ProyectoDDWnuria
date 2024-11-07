@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    border-bottom: 2px solid #d3d3d3;
+    z-index: 1000;
+}
+
+.nav{
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: all 0,5 ease;
+    z-index: 1000;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+    font-family: "Rowdies", sans-serif;
+}
+
+.menu li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 02s ease;
+    padding-inline: 30px;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    background-color: rgb(209, 209, 209);
+    color: #02cf27;
+    border-radius: 5px;
+}
+
+.logo img  {
+    width: 30%; 
+    height: auto; 
+    margin-left: 30px;
+}
+
+.contenido{
+    padding-top: 110px;
+}
+
+.contenedor{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/576/504/non_2x/abstract-wavy-green-background-free-vector.jpg");
+    border-radius: 2%;
+    margin: 2em;
+    padding: 100px 80px 80px 80px;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+span{
+    color: rgb(0, 243, 0);
+}
+
+
+
+.buscador{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 30px;
+}
+
+.buscador img{
+    width: 4.2%; 
+    margin-left: -10px; 
+    background-color: green;
+}
+
+input{
+    padding: 10px 40px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+h4, h2, small, a {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel{
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    height: 70vh;
+    width: 100%;
+    align-items: left;
+    
+}
+.carousel {
+    width: 90%;
+    margin: 0px 0px;
+}
+
+@media (min-width:768px) {
+    .carousel {
+        margin: 0px 60px;
+    }
+}
+
+.carousel h2 {
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    font-weight: 600;
+    text-align: left;
+    color: #3c3c3c;
+}
+
+.carrusel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.carrusel-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+
+}
+
+.carrusel {
+    position: relative;
+    width: 210px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+
+}
+
+.carrusel h4 {
+    position: absolute;
+    z-index: 1;
+    font-size: 23px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+
+}
+
+.carrusel h4 small {
+    font-size: 20px;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 1px rgba(0, 0, 0, 0.7);
+    
+}
+
+.carrusel a img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0px rgb(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+@media (min-width:768px) {
+    .carrusel {
+        width: 275px;
+
+    }
+    .carrusel a img {
+        width: 250px;
+    }
+}
+
+.carrusel-arrow {
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.carrusel-arrow:focus {
+    outline: 0;
+
+}
+
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev {
+    left: 0px;
+
+}
+
+.carrusel-next {
+    right: 0px;
+}
+
