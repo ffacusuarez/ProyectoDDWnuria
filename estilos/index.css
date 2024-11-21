@@ -309,7 +309,7 @@ a {
 .boton button{
     background-color: #017717;
     padding: 20px;
-    border-radius: 10%;
+    border-radius: 10% 10%;
     color: #ffffff;
     font-size: 20px;
     transition: all 0.3s ease;

@@ -123,3 +123,67 @@ footer{
 span{
     color: #008d1a;
 }
+
+.leyes {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ley1 text1"
+    "text2 ley2"
+    "ley3 text3"
+    "text4 ley4"
+    "ley5 text5";
+    gap: 10px;
+    padding: 15px;
+}
+
+.ley1 {
+    grid-area: ley1;
+    text-align:center;
+}
+
+.ley2 {
+    grid-area: ley2;
+    text-align:center;
+}
+
+.ley3 {
+    grid-area: ley3;
+    text-align:center;
+}
+
+.ley4 {
+    grid-area: ley4;
+    text-align:center;
+}
+
+.ley5 {
+    grid-area: ley5;
+    text-align:center;
+}
+
+.text1{
+    grid-area: text1;
+    text-align:center;
+}
+
+.text1{
+    grid-area: text2;
+    text-align:center;
+}
+
+.text3{
+    grid-area: text3;
+    text-align:center;
+}
+
+.text4{
+    grid-area: text4;
+    text-align:center;
+}
+
+.text5{
+    grid-area: text5;
+    text-align:center;
+}
