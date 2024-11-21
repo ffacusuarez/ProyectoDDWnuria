@@ -274,7 +274,7 @@ a {
 
 .der {
     grid-area: der;
-
+    text-align: center;
 }
 
 .izq {
@@ -295,17 +295,35 @@ a {
 }
 
 .izq p{
-    font-size: 20px;
+    font-size: 24px;
     padding: 20px;
     color: #3c3c3c;
 }
 
-.izq button{
-    background-color: #02cf27;
-    padding: 15px;
+
+.boton{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.boton button{
+    background-color: #017717;
+    padding: 20px;
     border-radius: 10%;
     color: #ffffff;
     font-size: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
+.boton button:hover{
+    background-color: #34ad4a;
+}
+
+footer{
+    background-color: #006613;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px
+}
+
