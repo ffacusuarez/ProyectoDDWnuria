@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    border-bottom: 2px solid #d3d3d3;
+    z-index: 1000;
+}
+
+.nav{
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: all 0,5 ease;
+    z-index: 1000;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+    font-family: "Rowdies", sans-serif;
+}
+
+.menu li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    padding-inline: 30px;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    color: #008418;
+}
+
+.logo img  {
+    width: 30%; 
+    height: auto; 
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+}
+
+
+.contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: black;
+}
+
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:  #037401;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #037401;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.btn-submit:hover {
+    background-color: #347733;
+}
+
+
+.success-message{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #00a400;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #006400; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px; 
+    border-top: 3px solid #004d00; 
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2); 
+}
+
+footer p {
+    margin: 0; 
+    line-height: 1.6; 
+}
+
+footer p br {
+    margin-bottom: 10px;
+}
+
+footer:hover {
+    background-color: #004d00; 
+    transition: background-color 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+    .contenido{
+        padding-top: 30px;
+    }
+    .nav {
+        flex-direction: row;
+        padding: 20px 15px;
+    }
+
+    .menu {
+        flex-direction: row;
+        width: 100%;
+        text-align: left; 
+    }
+
+    .menu li a {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+    .container {
+        padding-top: 40px;
+    }
+}
